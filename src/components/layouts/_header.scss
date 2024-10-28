@@ -1,0 +1,60 @@
+.header_wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; // 100vh에서 100vw로 수정
+    height: 28px; // 특정 높이 유지
+    background-color: #000;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw; // 100vh에서 100vw로 수정
+    height: 1px; // 특정 높이 유지
+    background-color: #000;
+  }
+
+  .header_inner {
+    display: flex;
+    align-items: center;
+    padding: 60px 30px 30px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    width: 114px;
+    height: 90px;
+  }
+
+  .header_menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header_menu_list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .header_menu_my {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+}

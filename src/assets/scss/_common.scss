@@ -1,0 +1,76 @@
+@import './_reset.scss';
+
+@font-face {
+  font-family: 'MixedFont';
+  src:
+    local('Roboto'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+  unicode-range: U+0000-007F, U+0080-00FF; /* 기본 라틴 문자 범위 */
+}
+
+@font-face {
+  font-family: 'MixedFont';
+  src:
+    local('Noto Sans KR'),
+    url('../fonts/NotoSans-VariableFont_wdth\,wght.ttf') format('truetype');
+  unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F; /* 한글 유니코드 범위 */
+}
+
+//scss 변수
+$point-color: #f18a39;
+$basic-color: #000;
+$basic-font-size: 14px;
+$basic-font-size-v2: 20px;
+$title-font-size: 36px;
+$bold-font: bold;
+
+* {
+  font-family: 'MixedFont', sans-serif !important;
+  color: $basic-color;
+}
+
+.line_height16 {
+  line-height: 16px;
+}
+.line_height26 {
+  line-height: 26px;
+}
+.line_height40 {
+  line-height: 40px;
+}
+.line_height50 {
+  line-height: 50px;
+}
+.basic_title {
+  font-size: $title-font-size;
+  color: $basic-color;
+  font-weight: $bold-font;
+}
+
+.point_title {
+  font-size: $title-font-size;
+  color: $point-color;
+  font-weight: $bold-font;
+}
+
+.basic_sub_title {
+  font-size: $basic-font-size;
+  color: $basic-color;
+}
+
+.basic_sub_title_v2 {
+  font-size: $basic-font-size-v2;
+  color: $basic-color;
+}
+.bold_font {
+  font-weight: $bold-font;
+}
+
+.border_bottom_font {
+  border-bottom: 1px solid $basic-color;
+}
+
+.basic_sub_font {
+  font-size: $basic-font-size;
+  color: $point-color;
+}
