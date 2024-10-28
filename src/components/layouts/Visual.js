@@ -56,7 +56,7 @@ function Visual() {
           <p className="basic_sub_title line_height26">
             Catbox Exist For <br /> All The Cats In The World
           </p>
-          <p className="basic_title line_height50">
+          <p className="basic_title line_height50 animationTitle">
             FOR <span className="point_title">CATS </span> <br />
             IN THE WORLD.
           </p>

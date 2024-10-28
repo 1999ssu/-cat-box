@@ -7,6 +7,24 @@
     opacity: 1;
   }
 }
+@keyframes rightToLeft {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes topToBottom {
+  0% {
+    top: -5%;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
 //상단 visual 영역
 .visual_wrap {
   width: 100%;
@@ -34,20 +52,6 @@
     .visual_wrap_inner_img_box_img {
       width: 100%;
       height: 100%;
-
-      //   &.new-image {
-      //     opacity: 1;
-      //     transform: scale(1);
-      //     transition: all 0.5s ease-out;
-      //   }
-
-      //   &.left,
-      //   &.right {
-      //     position: relative;
-      //     top: 0;
-      //     width: 50%;
-      //     height: 100%;
-      //   }
     }
     .visual_wrap_inner_text_box {
       position: relative;
@@ -61,10 +65,15 @@
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
         width: 100%;
         height: 3px;
         background-color: $basic-color;
+        animation: rightToLeft 1.5s ease-in-out;
+      }
+
+      .animationTitle {
+        position: relative;
+        animation: topToBottom 1.5s ease-in-out;
       }
     }
   }
