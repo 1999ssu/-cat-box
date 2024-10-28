@@ -38,7 +38,7 @@
     gap: 60px;
 
     .visual_wrap_inner_img_box {
-      width: 100%;
+      flex: 7;
       height: 100%;
       display: flex;
       gap: 20px;
@@ -54,9 +54,9 @@
       height: 100%;
     }
     .visual_wrap_inner_text_box {
-      position: relative;
-      width: 100%;
+      flex: 3;
       height: 100%;
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: space-around;

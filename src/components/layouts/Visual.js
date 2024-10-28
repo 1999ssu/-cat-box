@@ -6,12 +6,10 @@ function Visual() {
 
   const imgSlide = [
     {
-      leftImg: '/images/visual/visualImg1.svg',
-      rightImg: '/images/visual/visualImg1_1.svg',
+      catImg: '/images/visual/visualImg01.svg',
     },
     {
-      leftImg: '/images/visual/visualImg2.svg',
-      rightImg: '/images/visual/visualImg2_1.svg',
+      catImg: '/images/visual/visualImg02.svg',
     },
   ];
 
@@ -40,15 +38,9 @@ function Visual() {
       <div className="visual_wrap_inner">
         <div className={`visual_wrap_inner_img_box ${isNewImage ? 'new-image' : ''}`}>
           <p
-            className={`visual_wrap_inner_img_box_img left`}
+            className={`visual_wrap_inner_img_box_img`}
             style={{
-              background: `url(${imgSlide[currentIndex].leftImg}) no-repeat center center / cover`,
-            }}
-          ></p>
-          <p
-            className={`visual_wrap_inner_img_box_img right`}
-            style={{
-              background: `url(${imgSlide[currentIndex].rightImg}) no-repeat center center / cover`,
+              background: `url(${imgSlide[currentIndex].catImg}) no-repeat center center / cover`,
             }}
           ></p>
         </div>
