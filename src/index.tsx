@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import './assets/scss/_common.scss';
-import reportWebVitals from './reportWebVitals';
-import MainList from './views/main/MainList';
+// import './index.css';
+// import './assets/scss/_common.scss';
+// import reportWebVitals from './reportWebVitals';
+// import MainList from './views/main/MainList';
+import 'index.css';
+import 'assets/scss/_common.scss';
+import MainList from 'views/main/MainList';
+import reportWebVitals from 'reportWebVitals';
+
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
