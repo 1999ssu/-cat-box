@@ -9,23 +9,30 @@
     }
   }
   .tab_list {
-    position: relative;
     background: #efefef;
     width: calc((100% - 24px * 3) / 4);
-    padding: 20px;
-    box-sizing: border-box;
+
     justify-content: space-between;
-    cursor: pointer;
-    &:hover::after {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0px;
-      top: 0px;
+
+    a {
       width: 100%;
       height: 100%;
-      background: url('../../assets/images/icon/goodsAdd.svg') rgba(0, 0, 0, 0.6) center center
-        no-repeat;
+      position: relative;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      &:hover::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: url('../../assets/images/icon/goodsAdd.svg') rgba(0, 0, 0, 0.6) center center
+          no-repeat;
+      }
     }
   }
 }

@@ -25,13 +25,15 @@ const GoodsTabs: React.FC<GoodsTabsProps> = ({ selectedValue }) => {
     <ul className="tabs_wrap goods">
       {allItems.map((item, index) => (
         <li key={index} className="tab_list flex_column width_300">
-          <div className="img_box">
-            <img src={item.url} alt={item.title} />
-          </div>
-          <div className="text_wrap flex_column gap_10">
-            <p className="basic_sub_title">{item.title}</p>
-            <p className="bold_font basic_sub_title">{item.subTitle}</p>
-          </div>
+          <a href="/">
+            <div className="img_box">
+              <img src={item.url} alt={item.title} />
+            </div>
+            <div className="text_wrap flex_column gap_10">
+              <p className="basic_sub_title">{item.title}</p>
+              <p className="bold_font basic_sub_title">{item.subTitle}</p>
+            </div>
+          </a>
         </li>
       ))}
     </ul>
