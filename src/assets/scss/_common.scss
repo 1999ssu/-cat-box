@@ -16,15 +16,6 @@
   unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F; /* 한글 유니코드 범위 */
 }
 
-@keyframes opacity_03To_1 {
-  0% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 //scss 변수
 $point-color: #f18a39;
 $basic-color: #000;
@@ -50,6 +41,9 @@ $bold-font: bold;
 .line_height50 {
   line-height: 50px;
 }
+.gap_10 {
+  gap: 10px;
+}
 .gap_230 {
   display: flex;
   flex-direction: column;
@@ -59,6 +53,9 @@ $bold-font: bold;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+.width_300 {
+  width: 300px;
 }
 .roate_90 {
   transform: rotate(90deg);
@@ -103,4 +100,17 @@ $bold-font: bold;
 .basic_sub_font {
   font-size: $basic-font-size;
   color: $point-color;
+}
+
+.img_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+//flex
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
 }
