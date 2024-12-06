@@ -19,6 +19,7 @@
 //scss 변수
 $point-color: #f18a39;
 $basic-color: #000;
+$white-color: #ffffff;
 $basic-font-size: 14px;
 $basic-font-size-v2: 20px;
 $title-font-size: 36px;
@@ -79,6 +80,7 @@ $bold-font: bold;
 .basic_sub_title {
   font-size: $basic-font-size;
   color: $basic-color;
+  font-weight: normal;
 }
 
 .basic_sub_title_v2 {
@@ -101,7 +103,9 @@ $bold-font: bold;
   font-size: $basic-font-size;
   color: $point-color;
 }
-
+.basic_white_sub_font {
+  color: $white-color;
+}
 .img_box {
   width: 100%;
   height: 100%;
@@ -113,4 +117,10 @@ $bold-font: bold;
 .flex_column {
   display: flex;
   flex-direction: column;
+}
+//양쪽 끝으로 정렬
+.flex_space_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

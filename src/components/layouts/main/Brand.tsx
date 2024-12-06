@@ -1,4 +1,3 @@
-// import '../../../assets/scss/_main.scss';
 import React from 'react';
 import 'assets/scss/_main.scss';
 function Brand() {
@@ -6,18 +5,22 @@ function Brand() {
     <div className="brand_wrap">
       <div className="brand_wrap_inner">
         <div className="brand_wrap_inner_text_box">
-          <p className="text_01 basic_sub_title text_01 line_height26">
+          <p className="text_01 basic_sub_title text_01 line_height26 basic_white_sub_font ">
             세상의
             <br />
             모든
             <br />
             고양이들을 위해,
           </p>
-          <p className="text_01 basic_sub_title text_01 line_height26">
-            See More About
-            <span className="point_color">CAT BOX</span>
+          <a href="/">
+            <p className="text_02  line_height26 ">
+              <span className="basic_sub_title bold_font">See More About</span>
+              <span className="point_color bold_font">CAT BOX</span>
+            </p>
+          </a>
+          <p className="text_03 basic_sub_title line_height26 roate_-90 basic_white_sub_font ">
+            for cats in the world
           </p>
-          <p className="text_02 basic_sub_title line_height26 roate_-90">for cats in the world</p>
         </div>
         <div className="brand_wrap_inner_img_box">
           <p
