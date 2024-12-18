@@ -11,7 +11,7 @@ const Footer = () => {
         </h1>
         <div className="footer_menu">
           <p className="footer_item">catBox ⓒ 2024</p>
-          <a className="footer_item" href="/">
+          <a className="footer_item" href="https://www.instagram.com/ghdsuwl/">
             INSTAGRAM
           </a>
           <a className="footer_item" href="/">
