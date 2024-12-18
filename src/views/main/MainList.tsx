@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from 'components/layouts/header';
+import Header from 'components/layouts/Header';
+import Footer from 'components/layouts/Footer';
 import CatImg from 'components/layouts/main/CatImg';
 import Visual from 'components/layouts/main/Visual';
 import Goods from 'components/layouts/main/Goods';
@@ -17,6 +18,7 @@ function MainList() {
         <Brand />
         <Album />
       </div>
+      <Footer />
     </div>
   );
 }

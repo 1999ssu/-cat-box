@@ -44,7 +44,7 @@ const Album = () => {
           <h2 className="basic_title line_height50">
             CAT<span className="point_title"> ALBUM.</span>
           </h2>
-          <p className="basic_sub_title">우리 동네 고양이들의 소식을 만나보세요.</p>
+          <p className="basic_sub_title">우리 고양이들의 소식을 만나보세요.</p>
         </div>
         <div className="img_wrap album">
           <div
