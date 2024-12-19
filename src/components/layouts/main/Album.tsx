@@ -4,10 +4,6 @@ import useCatImgs from 'hooks/compute/main/catAlbum/catAlbum';
 const Album = () => {
   const { catImgs, loading, error } = useCatImgs();
 
-  console.log('catImgs::', catImgs);
-  console.log('loading::', loading);
-  console.log('error::', error);
-
   const imgBoxRef = useRef<HTMLDivElement | null>(null);
   const [isDragging, setIsDragging] = useState(false); // 드래그 상태
   const [startX, setStartX] = useState(0); // 시작 위치
