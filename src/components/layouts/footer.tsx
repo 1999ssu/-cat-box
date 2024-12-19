@@ -14,7 +14,7 @@ const Footer = () => {
           <a className="footer_item" href="https://www.instagram.com/ghdsuwl/">
             INSTAGRAM
           </a>
-          <a className="footer_item" href="/">
+          <a className="footer_item" href="https://github.com/1999ssu/-cat-box">
             GITHUB
           </a>
         </div>
