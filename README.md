@@ -17,4 +17,4 @@
 <img alt="github" src ="https://img.shields.io/badge/github-181717.svg?&style=flat&logo=github&logoColor=white"/> <img alt="VSCode" src ="https://img.shields.io/badge/VSCode-007ACC.svg?&style=flat&logo=visual-studio-code&logoColor=white"/> 
 
 ### OPEN API
-[https://cataas.com/](https://api.thecatapi.com/v1/images/search)]
+[https://api.thecatapi.com/](https://api.thecatapi.com/v1/images/search)
