@@ -6,10 +6,10 @@ function Visual() {
 
   const imgSlide = [
     {
-      catImg: '/images/visual/visualImg01.svg',
+      catImg: 'https://cat-box-6b041.web.app/images/visual/visualImg01.svg',
     },
     {
-      catImg: '/images/visual/visualImg02.svg',
+      catImg: 'https://cat-box-6b041.web.app/images/visual/visualImg02.svg',
     },
   ];
 

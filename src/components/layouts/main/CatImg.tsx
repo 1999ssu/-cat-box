@@ -43,7 +43,8 @@ function CatImg() {
           <p
             className="cat_img_img01"
             style={{
-              background: 'url(/images/visual/visual2_img01.svg) no-repeat center center / contain',
+              background:
+                'url(https://cat-box-6b041.web.app/images/visual/visual2_img01.svg) no-repeat center center / contain',
             }}
           />
         </div>
@@ -51,7 +52,8 @@ function CatImg() {
           <p
             className="cat_img_img02"
             style={{
-              background: 'url(/images/visual/visual2_img02.svg) no-repeat center center / contain',
+              background:
+                'url(https://cat-box-6b041.web.app/images/visual/visual2_img02.svg) no-repeat center center / contain',
             }}
           />
         </div>
@@ -59,7 +61,8 @@ function CatImg() {
           <p
             className="cat_img_img03"
             style={{
-              background: 'url(/images/visual/visual2_img03.svg) no-repeat center center / contain',
+              background:
+                'url(https://cat-box-6b041.web.app/images/visual/visual2_img03.svg) no-repeat center center / contain',
             }}
           />
         </div>
@@ -75,7 +78,8 @@ function CatImg() {
           <p
             className="text_03 cat_img_wrap_inner_text_box_text"
             style={{
-              background: 'url(/images/visual/visual2_img04.svg) no-repeat center center / contain',
+              background:
+                'url(https://cat-box-6b041.web.app/images/visual/visual2_img04.svg) no-repeat center center / contain',
             }}
           />
         </div>

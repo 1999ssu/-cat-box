@@ -26,7 +26,8 @@ function Brand() {
           <p
             className="brand_img01"
             style={{
-              background: 'url(/images/brand/brand_img01.svg) no-repeat center center / contain',
+              background:
+                'url(https://cat-box-6b041.web.app/images/brand/brand_img01.svg) no-repeat center center / contain',
             }}
           />
         </div>
