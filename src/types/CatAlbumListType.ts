@@ -1,6 +1,6 @@
 export interface CatAlbumListType {
-  _id: string;
-  mimetype: string;
-  size: number;
-  tag: string[];
+  id: string;
+  url: string;
+  width: number;
+  height: number;
 }

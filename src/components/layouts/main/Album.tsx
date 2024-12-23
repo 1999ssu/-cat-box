@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import useCatImgs from 'hooks/compute/main/catAlbum/catAlbum';
 // import { getCatImgs } from 'api/catAlbumApi';
 const Album = () => {
-  const { catImgs, loading, error } = useCatImgs();
+  const { catImgs, loading, error } = useCatImgs(8);
 
   const imgBoxRef = useRef<HTMLDivElement | null>(null);
   const [isDragging, setIsDragging] = useState(false); // 드래그 상태
@@ -54,11 +54,7 @@ const Album = () => {
           >
             {catImgs.map((item, index) => (
               <p key={index} className="img_list">
-                <img
-                  src={`https://cataas.com/cat/${item._id}`}
-                  alt={`Cat ${index}`}
-                  onDragStart={preventImageDrag}
-                />
+                <img src={item.url} alt={`Cat ${index}`} onDragStart={preventImageDrag} />
               </p>
             ))}
           </div>

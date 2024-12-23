@@ -1,10 +1,9 @@
 //catAlbum hook
-
 import { getCatImgs } from 'api/catAlbumApi';
 import { useEffect, useState } from 'react';
 import { CatAlbumListType } from 'types/CatAlbumListType';
 
-const useCatImgs = () => {
+const useCatImgs = (initiaLimit = 8) => {
   const [catImgs, setCatImgs] = useState<CatAlbumListType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -12,7 +11,7 @@ const useCatImgs = () => {
   useEffect(() => {
     const getImgs = async () => {
       try {
-        const catImgData = await getCatImgs();
+        const catImgData = await getCatImgs(initiaLimit);
         const normalizedData = Array.isArray(catImgData) ? catImgData : [catImgData];
 
         setCatImgs(normalizedData);
@@ -23,7 +22,7 @@ const useCatImgs = () => {
       }
     };
     getImgs();
-  }, []);
+  }, [initiaLimit]);
   return { catImgs, loading, error };
 };
 
