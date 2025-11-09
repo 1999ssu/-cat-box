@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client';
 // import './assets/scss/_common.scss';
 // import reportWebVitals from './reportWebVitals';
 // import MainList from './views/main/MainList';
+import { Provider } from 'react-redux'; // ✅ 추가
+import { store } from 'services/store';
 import 'index.css';
 import 'assets/scss/_common.scss';
 import MainList from 'views/main/MainList';
@@ -13,7 +15,9 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
   // <React.StrictMode>
-  <MainList />
+  <Provider store={store}>
+    <MainList />
+  </Provider>
   // </React.StrictMode>
 );
 
