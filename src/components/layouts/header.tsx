@@ -12,10 +12,11 @@ const Header = () => {
         <div className="header_menu">
           <div className="header_menu_list">
             <a href="/">CAT BOX</a>
-            <a href="/">CAT REGISTER</a>
-            <a href="/">CATBOX FOUND</a>
-            <a href="/">CAT NEWS</a>
+            {/* <a href="/">CAT REGISTER</a> */}
+            {/* <a href="/">CATBOX FOUND</a> */}
+            {/* <a href="/">CAT NEWS</a> */}
             <a href="/">CAT SHOP</a>
+            <a href="/">CAT CART</a>
           </div>
           <div className="header_menu_my">
             <a href="/">MY</a>
