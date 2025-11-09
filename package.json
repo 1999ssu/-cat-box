@@ -33,6 +33,7 @@
   "scripts": {
     "start": "react-scripts start --openssl-legacy-provider",
     "build": "react-scripts build --openssl-legacy-provider",
+    "deploy": "yarn build && firebase deploy",
     "test": "react-scripts test --openssl-legacy-provider",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",

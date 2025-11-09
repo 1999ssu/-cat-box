@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "cat-box-6b041"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
