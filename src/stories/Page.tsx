@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Header } from './Header';
 import './page.css';
+import { Link } from 'react-router-dom';
 
 type User = {
   name: string;
@@ -22,10 +23,10 @@ export const Page: React.FC = () => {
       <section className="storybook-page">
         <h2>Pages in Storybook</h2>
         <p>
-          We recommend building UIs with a{' '}
-          <a href="https://componentdriven.org" target="_blank" rel="noopener noreferrer">
+          We recommend building UIs with a
+          <Link to="https://componentdriven.org" target="_blank" rel="noopener noreferrer">
             <strong>component-driven</strong>
-          </a>{' '}
+          </Link>
           process starting with atomic components and ending with pages.
         </p>
         <p>
@@ -44,18 +45,18 @@ export const Page: React.FC = () => {
           </li>
         </ul>
         <p>
-          Get a guided tutorial on component-driven development at{' '}
-          <a href="https://storybook.js.org/tutorials/" target="_blank" rel="noopener noreferrer">
+          Get a guided tutorial on component-driven development at
+          <Link to="https://storybook.js.org/tutorials/" target="_blank" rel="noopener noreferrer">
             Storybook tutorials
-          </a>
-          . Read more in the{' '}
-          <a href="https://storybook.js.org/docs" target="_blank" rel="noopener noreferrer">
+          </Link>
+          . Read more in the
+          <Link to="https://storybook.js.org/docs" target="_blank" rel="noopener noreferrer">
             docs
-          </a>
+          </Link>
           .
         </p>
         <div className="tip-wrapper">
-          <span className="tip">Tip</span> Adjust the width of the canvas with the{' '}
+          <span className="tip">Tip</span> Adjust the width of the canvas with the
           <svg width="10" height="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fillRule="evenodd">
               <path

@@ -1,5 +1,6 @@
 import React from 'react';
 import 'assets/scss/_main.scss';
+import { Link } from 'react-router-dom';
 function Brand() {
   return (
     <div className="brand_wrap">
@@ -12,12 +13,12 @@ function Brand() {
             <br />
             고양이들을 위해,
           </p>
-          <a href="/">
+          <Link to="/">
             <p className="text_02  line_height26 ">
               <span className="basic_sub_title bold_font">See More About</span>
               <span className="point_color bold_font">CAT BOX</span>
             </p>
-          </a>
+          </Link>
           <p className="text_03 basic_sub_title line_height26 roate_-90 basic_white_sub_font ">
             for cats in the world
           </p>

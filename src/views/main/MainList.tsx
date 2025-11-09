@@ -10,7 +10,6 @@ import Album from 'components/layouts/main/Album';
 function MainList() {
   return (
     <div className="main_wrap">
-      <Header />
       <Visual />
       <div className="container_wrap wdith_1200 gap_230">
         <CatImg />
@@ -18,7 +17,6 @@ function MainList() {
         <Brand />
         <Album />
       </div>
-      <Footer />
     </div>
   );
 }

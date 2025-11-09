@@ -10,13 +10,14 @@ import 'index.css';
 import 'assets/scss/_common.scss';
 import MainList from 'views/main/MainList';
 import reportWebVitals from 'reportWebVitals';
+import App from 'App';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
   // <React.StrictMode>
   <Provider store={store}>
-    <MainList />
+    <App />
   </Provider>
   // </React.StrictMode>
 );
