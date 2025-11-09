@@ -6,7 +6,7 @@ import { addToCart, removeFromCart, decreaseQuantity } from 'services/slices/car
 const CartList = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state: RootState) => state.cart.items);
-
+  const cart = useSelector((state: RootState) => state.cart);
   return (
     <div className="cart_wrap">
       <h2>My Cart</h2>
@@ -22,7 +22,7 @@ const CartList = () => {
               <div className="text_wrap">
                 <div className="text_wrap flex_column gap_10">
                   <p className="basic_sub_title">{item.title}</p>
-                  <p className="bold_font basic_sub_title">{item.subTitle}</p>
+                  <p className="bold_font basic_sub_title">$ {item.price}</p>
                 </div>
                 <div className="text_wrap gap_10">
                   <button onClick={() => dispatch(addToCart(item))}>+</button>
@@ -36,6 +36,9 @@ const CartList = () => {
           ))}
         </ul>
       )}
+      <div className="cart_total">
+        <strong>Total:</strong> $ {cart.totalPrice.toLocaleString()}
+      </div>
     </div>
   );
 };

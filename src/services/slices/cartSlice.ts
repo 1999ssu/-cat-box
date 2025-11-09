@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface CartItems {
   title: string;
-  subTitle: string;
+  price: number;
   url: string;
   type: string;
   quantity: number;
@@ -10,10 +10,12 @@ interface CartItems {
 
 interface CartState {
   items: CartItems[];
+  totalPrice: number;
 }
 
 const initialState: CartState = {
   items: [],
+  totalPrice: 0,
 };
 
 const cartSlice = createSlice({
@@ -27,9 +29,11 @@ const cartSlice = createSlice({
       } else {
         state.items.push({ ...action.payload, quantity: 1 });
       }
+      state.totalPrice = state.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
     },
     removeFromCart: (state, action: PayloadAction<string>) => {
       state.items = state.items.filter((item) => item.title !== action.payload); //같은 타이틀 전부 삭제
+      state.totalPrice = state.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
     },
     decreaseQuantity: (state, action: PayloadAction<string>) => {
       const existingItem = state.items.find((item) => item.title === action.payload);
@@ -40,6 +44,7 @@ const cartSlice = createSlice({
           state.items = state.items.filter((item) => item.title !== action.payload); //1개면 삭제
         }
       }
+      state.totalPrice = state.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
     },
     clearCart: (state) => {
       state.items = [];

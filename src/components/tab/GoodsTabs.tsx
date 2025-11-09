@@ -35,7 +35,7 @@ const GoodsTabs: React.FC<GoodsTabsProps> = ({ selectedValue }) => {
             </div>
             <div className="text_wrap flex_column gap_10">
               <p className="basic_sub_title">{item.title}</p>
-              <p className="bold_font basic_sub_title">{item.subTitle}</p>
+              <p className="bold_font basic_sub_title">$ {item.price}</p>
             </div>
           </button>
         </li>
