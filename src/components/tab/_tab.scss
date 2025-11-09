@@ -7,21 +7,12 @@
     img {
       width: 100%;
     }
-  }
-  .tab_list {
-    background: #efefef;
-    width: calc((100% - 24px * 3) / 4);
 
-    justify-content: space-between;
-
-    a {
-      width: 100%;
+    button {
       height: 100%;
       position: relative;
       padding: 20px;
       box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
       &:hover::after {
         content: '';
         display: block;
@@ -34,5 +25,35 @@
           no-repeat;
       }
     }
+  }
+  .tab_list {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background: #efefef;
+    width: calc((100% - 24px * 3) / 4);
+
+    justify-content: space-between;
+
+    .basic_sub_title {
+      display: -webkit-box;
+      -webkit-line-clamp: 2; // 최대 2줄
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .img_box {
+      height: 200px;
+    }
+    .flex_column {
+      margin-top: 20px;
+    }
+  }
+}
+.cart_wrap {
+  .tab_list {
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
