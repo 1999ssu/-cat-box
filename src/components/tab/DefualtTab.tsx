@@ -52,6 +52,7 @@ const DefaultTab: React.FC<DefaultTabProps> = ({ children }) => {
             <StyledTab label="ALL" value="all" />
             <StyledTab label="CAT FOOD" value="food" />
             <StyledTab label="ECT" value="ect" />
+            <StyledTab label="PLANTS" value="plants" />
           </TabList>
         </Box>
         {React.Children.map(children, (child) => {

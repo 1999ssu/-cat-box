@@ -49,6 +49,42 @@ const GoodsTabsData = [
     title: '리스펫 반려동물 세라믹 식기 테이블 세트 2구',
     subTitle: '17,900 won',
   },
+  {
+    type: 'plants',
+    url: 'https://cat-box-6b041.web.app/images/goods/goods_img_plant_01.svg',
+    title: 'Outdoor Pink Flower Hydrangea Shrub Plant',
+    subTitle: '$99.99',
+  },
+  {
+    type: 'plants',
+    url: 'https://cat-box-6b041.web.app/images/goods/goods_img_plant_02.svg',
+    title: 'Outdoor Fiddle Leaf Plant in Black Pot',
+    subTitle: '$89.99',
+  },
+  {
+    type: 'plants',
+    url: 'https://cat-box-6b041.web.app/images/goods/goods_img_plant_03.svg',
+    title: 'Monstera Leaf Plant, 23-in',
+    subTitle: '44.99',
+  },
+  {
+    type: 'plants',
+    url: 'https://cat-box-6b041.web.app/images/goods/goods_img_plant_04.svg',
+    title: 'Outdoor Dracaena Plant in Black Pot, 47-in',
+    subTitle: '$99.99',
+  },
+  {
+    type: 'plants',
+    url: 'https://cat-box-6b041.web.app/images/goods/goods_img_plant_05.svg',
+    title: 'CANVAS 7-in Modern Artificial Indoor Succulent Plant in Cement Pot',
+    subTitle: '$19.99',
+  },
+  {
+    type: 'plants',
+    url: 'https://cat-box-6b041.web.app/images/goods/goods_img_plant_06.svg',
+    title: 'Outdoor Schefflera Plant in Black Pot',
+    subTitle: '$99.99',
+  },
 ];
 
 export default GoodsTabsData;
