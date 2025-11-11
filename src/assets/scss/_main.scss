@@ -94,7 +94,9 @@
 .main_wrap {
   overflow-x: hidden;
 }
-
+main {
+  padding-top: 135px;
+}
 //상단 visual 영역
 .visual_wrap {
   width: 100%;
@@ -422,7 +424,7 @@
 }
 
 //album 영역
- 
+
 .album_wrap_inner {
   .text_box {
     padding: 0px 80px;
@@ -436,8 +438,8 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     overflow-y: hidden;
-    cursor:grab;
- 
+    cursor: grab;
+
     &::-webkit-scrollbar {
       height: 8px; /* 가로 스크롤바 높이 */
       background-color: #f1f1f1; /* 스크롤바 배경색 */
@@ -451,12 +453,11 @@
     }
   }
 
-
   .img_list {
     width: 282px;
     height: 280px;
     flex-shrink: 0;
-    &:active{
+    &:active {
       cursor: grabbing;
     }
   }
@@ -465,7 +466,6 @@
   width: 100%;
   height: 100%;
   display: flex;
-
 
   img {
     width: 100%;
