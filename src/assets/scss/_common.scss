@@ -58,6 +58,15 @@ $bold-font: bold;
 .width_300 {
   width: 300px;
 }
+.max_w_120 {
+  max-width: 120px;
+}
+.height_350 {
+  height: 350px;
+}
+.height_35 {
+  height: 35px;
+}
 .roate_90 {
   transform: rotate(90deg);
 }
@@ -106,14 +115,34 @@ $bold-font: bold;
 .basic_white_sub_font {
   color: $white-color;
 }
+.text_align_r {
+  text-align: right;
+}
 .img_box {
   width: 100%;
   height: 100%;
   display: flex;
 }
 
+.bg_gray {
+  background: #efefef;
+}
+.btn_wrap {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.btn_gray {
+  border-radius: 20px;
+  border: solid 1px #babbbe;
+}
 //flex
-
+.flex {
+  display: flex;
+}
+.flex_center {
+  align-items: center;
+}
 .flex_column {
   display: flex;
   flex-direction: column;
@@ -122,5 +151,15 @@ $bold-font: bold;
 .flex_space_between {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.flex_content_end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.flex_space_around {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }

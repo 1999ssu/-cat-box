@@ -28,8 +28,14 @@ const GoodsTabs: React.FC<GoodsTabsProps> = ({ selectedValue }) => {
   return (
     <ul className="tabs_wrap goods">
       {allItems.map((item, index) => (
-        <li key={index} className="tab_list flex_column width_300">
-          <button onClick={() => dispatch(addToCart(item))} className="add_btn">
+        <li key={index} className="tab_list flex_column width_300 height_350 bg_gray ">
+          <button
+            onClick={() => {
+              console.log('담는아이템', item);
+              dispatch(addToCart(item));
+            }}
+            className="add_btn"
+          >
             <div className="img_box">
               <img src={item.url} alt={item.title} />
             </div>
